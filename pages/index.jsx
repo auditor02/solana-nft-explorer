@@ -4,7 +4,7 @@ import { Grid } from '@chakra-ui/react';
 import { useState, useEffect } from 'react';
 import { Footer } from 'components/modules';
 import Head from 'next/head';
-import { ColorModeButton, MoralisLogo } from 'components/elements';
+import { ColorModeButton } from 'components/elements';
 import apiPost from '../src/utils/apiPost';
 import { ArrowLeftIcon, ArrowRightIcon } from '@chakra-ui/icons';
 
@@ -81,7 +81,7 @@ const HomePage = () => {
       <Box borderBottom="1px" borderBottomColor="chakra-border-color">
         <Container maxW="container.xl" p={'10px'}>
           <Flex align="center" justify="space-between">
-            <MoralisLogo />
+            <h1>Medium</h1>
             {/* searchbar  */}
             <Flex align="center" gap={4}>
               <Input variant="filled" placeholder="Enter Wallet Address.." width={500} onInput={inputHandler} />
